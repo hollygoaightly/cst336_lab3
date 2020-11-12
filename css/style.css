@@ -1,0 +1,12 @@
+body{
+   background-color:#AFEEEE;
+    color:#483D8B; 
+    padding:15px;
+}
+p{
+    display:flex;
+}
+
+.error{
+    color:red;
+}
