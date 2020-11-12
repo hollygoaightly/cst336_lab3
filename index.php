@@ -42,6 +42,20 @@
             var usernameAvailable = false;
             var passwordValid = false;
             
+            window.onload = function(){
+                getStates();
+            };
+            
+            async function getStates(){
+                let url = "https://cst336.herokuapp.com/projects/api/state_abbrAPI.php";
+                let response = await fetch(url);
+                let data = await response.json();
+                for(let i = 0; i < data.length; i++){
+                   $("#state").append(`<option value="${data[i].usps.toLowerCase()}">${data[i].state}</option>`)
+               }
+                
+            }
+            
             // display city from API after typing a zip code
             $("#zip").on("change", async function(){
                let zipCode = $("#zip").val();
