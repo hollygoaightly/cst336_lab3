@@ -1,10 +1,35 @@
-body{
+#welcome{
    background-color:#AFEEEE;
     color:#483D8B; 
-    padding:15px;
+}
+body{
+    font-family: "Comic Sans MS";
+}
+h1{
+    font-family: "Comic Sans MS";
+}
+form{
+    background-color:#AFEEEE;
+    color:#483D8B; 
+    padding:30px;
+    border-style: double;
+    border-color: #EE82EE;
+    margin-right:700px;
 }
 p{
     display:flex;
+}
+input[type=text] {
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color:#FFFACD;
+}
+input[type=password] {
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color:#FFFACD;
 }
 
 .error{
